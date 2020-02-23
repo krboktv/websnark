@@ -11,7 +11,7 @@
             exports.pOneT = 160616;
             exports.prePSize = undefined;
             exports.preQSize = undefined;
-        
+
 }).call(this,require("buffer").Buffer)
 },{"buffer":9}],2:[function(require,module,exports){
 /*
@@ -4984,7 +4984,7 @@ const inBrowser = (typeof window !== "undefined");
 let NodeWorker;
 let NodeCrypto;
 if (!inBrowser) {
-    NodeWorker = require("worker_threads").Worker;
+    NodeWorker = {};
     NodeCrypto = require("crypto");
 }
 

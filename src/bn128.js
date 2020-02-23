@@ -28,7 +28,7 @@ const inBrowser = (typeof window !== "undefined");
 let NodeWorker;
 let NodeCrypto;
 if (!inBrowser) {
-    NodeWorker = require("worker_threads").Worker;
+    NodeWorker = {};
     NodeCrypto = require("crypto");
 }
 
